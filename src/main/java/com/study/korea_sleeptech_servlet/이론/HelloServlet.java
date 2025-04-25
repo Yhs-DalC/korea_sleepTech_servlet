@@ -1,8 +1,7 @@
-package com.study.korea_sleeptech_servlet;
+package com.study.korea_sleeptech_servlet.이론;
 
 import java.io.*;
 import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
 
 //WebServlet 어노테이션
 // : 해당 서블릿을 문자열의 URL패턴과 매핑

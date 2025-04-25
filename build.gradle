@@ -1,10 +1,14 @@
 plugins {
   id 'java'
-  id 'war'
+  id 'war'// web application archive: 웹 어플리케이션 배포를 위한 설정
 }
 
 group 'com.study'
 version '1.0-SNAPSHOT'
+
+war{
+  archiveFileName = 'ROOT.war'//war 파일명을 ROOT로 지정
+}
 
 repositories {
   mavenCentral()
@@ -26,6 +30,13 @@ dependencies {
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+  // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+  implementation('com.mysql:mysql-connector-j:8.0.33')
+
+  // https://mvnrepository.com/artifact/org.projectlombok/lombok
+  implementation ('org.projectlombok:lombok:1.18.38')
+  annotationProcessor ('org.projectlombok:lombok:1.18.38')
 }
 
 test {

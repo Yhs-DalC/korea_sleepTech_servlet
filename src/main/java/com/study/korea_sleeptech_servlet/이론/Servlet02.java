@@ -1,3 +1,5 @@
+package com.study.korea_sleeptech_servlet.이론;
+
 public class Servlet02 {
     /*
     * === 서블릿 프로젝트 생성===
